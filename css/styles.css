@@ -14,8 +14,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--dark);
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+  background-color: var(--white-background);
 }
 
 .list {
@@ -24,10 +25,9 @@ body {
 
 .link {
   text-decoration: none;
-  font-style: normal;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -39,12 +39,12 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /** ------- HEADER------- **/
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -70,6 +70,10 @@ body {
 .header-link:hover,
 .header-link:focus {
   color: var(--pressed-state);
+}
+
+.address {
+  font-style: normal;
 }
 
 .header-address-link {
@@ -122,7 +126,7 @@ body {
   height: 56px;
   left: 20px;
   top: 88px;
-  font-family:'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -151,12 +155,12 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--dark);
 }
 .advantages-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text);
 }
 
 /** ------- WORK------- **/
@@ -167,9 +171,18 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--dark);
 }
 
 /** ------- TEAM------- **/
+
+.team {
+  background-color: var(--light);
+}
+
+.team-item {
+  background-color: var(--white-background);
+}
 
 .team-title {
   font-size: 36px;
@@ -177,6 +190,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--dark);
 }
 
 .team-subtitle {
@@ -185,13 +199,13 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  color: var(--dark);
 }
 .team-text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--text);
 }
 
 /*? PAGE 2 ?*/
@@ -204,7 +218,7 @@ body {
   border: 1px solid var(--accent);
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -226,10 +240,10 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--dark);
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text);
 }
